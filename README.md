@@ -15,11 +15,11 @@ The following list is our sources:
 - https://www.kaggle.com/datasets/wandernat/us-hybrid-and-electric-sales-19992015
 - This dataset contains the avergage fuel economy from all makes and models from 2008-2022. The datasets also includes transmission type, engine type, in addition to city and highway mpg. This dataset is an excel file, converting the dataset into a pandas framework. As this dataset contained massive amounts of information, it was paramount to clean our data include information that are relevant such as city and highway mpg. In addition, we utilized our data cleaning to gather fuel economy data by the following year.
 
-**Transform - Talk about cleaning and formatting data in order to have the two data sources be related.**
+# Transform:
 
 we can walk through our jupyter code and make mention of decisions to transform rows and columns to accomodate our study
 
-**Load - The join that we end up with showcasing data from multiple sources**
+# Load :
 
 display final table making a clean, direct comparison of our two data sources
 
