@@ -19,33 +19,10 @@ The following list is our sources:
 
 # Transform:
 
-we can walk through our jupyter code and make mention of decisions to transform rows and columns to accomodate our study
+Based on the information we wanted out of the data sets, we dropped a large amount of unnecessary columns and renamed some to be more relevant. Because the date format differed in our data sets, we wrote code to make the dates a uniform style and allow for joins to be made across data. A groupby/mean was then performed on our fuel price data in order to average monthly fuel costs per year.
 
-# Load :
+We then dropped values from our data that fell out of our range of interest, 2013-2021. In order to avoid hard-coding excel extractions for each file, we wrote an algorithm that lists all files in our directory, converts them to dataframes, and concatenates them together. Our foreign key columns were also renamed to be in like with postgres compatible syntax before being inserted.
 
-display final table making a clean, direct comparison of our two data sources
+# Load:
 
-
-
-Go Team!
-
-The final README reflects the following:
-√ Proposal cites at least two sources of data
-√ Proposal includes the type of final production database to load the data into (relational or non-relational)
-√ Gives relevant and succinct description of findings (2–3 sentences)
-
-The final README reflects the following:
-√ Extract: indicates the original data sources and how the data were formatted at a professional level
-√ Transform: explains what data clearing or transformation was required at a professional level
-√ Load: explains the final database, tables/collections, and why the topic was chosen at a professional level
-
-√ Successfully uploaded to
-GitHub; demonstrating
-professional quality of
-presentation
-√ GitHub repository is free of
-unnecessary files and folders
-and has an appropriate .gitignore
-in use
-√ The README is customized to
-a professional level
+Using Postgres, we executed a query to join the car and fuel tables created in Python. The result is sorted chronologically to make it easier to notice trends over time. The join is made across the Year column to match cars with the price of fuel the year they were released.
