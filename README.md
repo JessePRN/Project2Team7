@@ -19,6 +19,8 @@ The following list is our sources:
 
 In order to avoid hard-coding the extraction for each individual car detail file, an algorithm was created allowing for better reuse and modularity of code. A glob was created representing the directory with our car detail files. By iterating through the files in our glob, we're able to create dataframes, append them a list, and ultimately concatenate our dataframes together for simplicity.
 
+![Glob Iteration](./screenshots/dynamic_file_extraction.png)
+
 # Transform:
 
 Based on the information we wanted out of the data sets, we dropped a large amount of unnecessary columns and renamed many to be more relevant. Because the date format differed in our data sets, we wrote code to make the dates a uniform style and allowing for joins to be made. A groupby/mean was then performed on our fuel price data to average monthly fuel costs per year.
@@ -28,6 +30,8 @@ We then dropped values from our data that fell out of our time range of interest
 # Load:
 
 Using Postgres, we executed a query to join the car and fuel tables created in Python. The result is sorted chronologically to make it easier to notice trends over time. The join is made across the Year columns to match each car with the price of fuel the year they were released.
+
+![Postgres Load](./screenshots/load_query.png)
 
 The data suggests that each year, fuel prices are raising, and cars are becoming more fuel efficient. With a few changes to our queries, we could elaborate on other variables that may affect trends. For instance, we could group cars by manufacturer in order to discern whether some have been more conscience of fuel efficiency than others. We could also reference manufacturers with their country of origin to determine whether nations have different attitudes in terms of demanding more fuel efficient vehicles.
 
