@@ -28,3 +28,6 @@ We then dropped values from our data that fell out of our time range of interest
 # Load:
 
 Using Postgres, we executed a query to join the car and fuel tables created in Python. The result is sorted chronologically to make it easier to notice trends over time. The join is made across the Year columns to match each car with the price of fuel the year they were released.
+
+The data suggests that each year, fuel prices are raising, and cars are becoming more fuel efficient. With a few changes in our code, we could elaborate on distinctions that already exist in our data. For instance, we could group cars by manufacturer in order to discern whether some have been more conscious of fuel efficiency than others. We could also reference manufacturers with their country of origin to determine whether nations have different attitudes in terms of demanding more fuel efficient vehicles.
+
