@@ -11,3 +11,13 @@ The final README reflects the following:
 √ Transform: explains what data clearing or transformation was required at a professional level
 √ Load: explains the final database, tables/collections, and why the topic was chosen at a professional level
 
+√ Successfully uploaded to
+GitHub; demonstrating
+professional quality of
+presentation
+√ GitHub repository is free of
+unnecessary files and folders
+and has an appropriate .gitignore
+in use
+√ The README is customized to
+a professional level
