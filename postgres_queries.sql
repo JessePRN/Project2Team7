@@ -10,6 +10,5 @@
 SELECT *
 FROM car_mpg
 JOIN us_gas_price
-ON car_mpg."Year" = us_gas_price."Year";
-
-
+ON car_mpg."Year" = us_gas_price."Year"
+ORDER BY car_mpg."Year";
