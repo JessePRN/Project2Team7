@@ -3,11 +3,18 @@
 Synopsis - Comparing fuel effiency of cars to over time with gas prices to determine trends
 
 
-Extract - Talk about our data sources, where they came from
+**Extract - Talk about our data sources, where they came from**
 
-Transform - Talk about cleaning and formatting data in order to have the two data sources be related
+https://www.kaggle.com/datasets/mruanova/us-gasoline-and-diesel-retail-prices-19952021
+https://www.kaggle.com/datasets/wandernat/us-hybrid-and-electric-sales-19992015
 
-Load - The join that we end up with showcasing data from multiple sources
+**Transform - Talk about cleaning and formatting data in order to have the two data sources be related.**
+
+we can walk through our jupyter code and make mention of decisions to transform rows and columns to accomodate our study
+
+**Load - The join that we end up with showcasing data from multiple sources
+
+display final table making a clean, direct comparison of our two data sources
 
 
 
