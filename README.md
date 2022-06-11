@@ -4,7 +4,7 @@
 
  Inflation has played a massive impact on how we spend our money. The most obvious indicator being gas prices. The vehicle you drive makes you realize how efficient is the fuel economy, and how much you have to pay at the pump as result. Our ETL will look into how the constant rise of gas prices have made car manufacturers produce cars with better MPG throughout time. More specifically the last 10 years. 
 
-We will compare the average gasoline prices to the average fuel economy to the corresponding year. The data will be prepared by isolating the years of interest with their respective data followed extracting the data of interest from their csv files, and lastly, combining both datasets via pandas anfd sql.
+We will compare the average gasoline prices to the average fuel economy to the corresponding year. The data will be prepared by isolating the years of interest with their respective data followed extracting the data of interest from their csv files, and lastly, combining both datasets via pandas and sql.
 
 
 # Extract:
