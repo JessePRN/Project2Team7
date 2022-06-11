@@ -17,12 +17,14 @@ The following list is our sources:
 - https://www.kaggle.com/datasets/wandernat/us-hybrid-and-electric-sales-19992015
 - This dataset contains the avergage fuel economy from all makes and models from 2008-2022. The datasets also includes transmission type, engine type, in addition to city and highway mpg. This dataset is an excel file, converting the dataset into a pandas framework. As this dataset contained massive amounts of information, it was paramount to clean our data include information that are relevant such as city and highway mpg. In addition, we utilized our data cleaning to gather fuel economy data by the following year.
 
+In order to avoid hard-coding the extraction for each individual car detail file, an algorithm was created allowing for better reuse and modularity of code. A glob was created representing the directory with our car detail files. By iterating through the files in our glob, we're able to create dataframes, append them a list, and ultimately concatenate our dataframes together for simplicity.
+
 # Transform:
 
-Based on the information we wanted out of the data sets, we dropped a large amount of unnecessary columns and renamed some to be more relevant. Because the date format differed in our data sets, we wrote code to make the dates a uniform style and allow for joins to be made across data. A groupby/mean was then performed on our fuel price data in order to average monthly fuel costs per year.
+Based on the information we wanted out of the data sets, we dropped a large amount of unnecessary columns and renamed many to be more relevant. Because the date format differed in our data sets, we wrote code to make the dates a uniform style and allowing for joins to be made. A groupby/mean was then performed on our fuel price data to average monthly fuel costs per year.
 
-We then dropped values from our data that fell out of our range of interest, 2013-2021. In order to avoid hard-coding excel extractions for each file, we wrote an algorithm that lists all files in our directory, converts them to dataframes, and concatenates them together. Our foreign key columns were also renamed to be in like with postgres compatible syntax before being inserted.
+We then dropped values from our data that fell out of our time range of interest, 2013-2021.  Our foreign key columns were also renamed to be in line with postgres conventions.
 
 # Load:
 
-Using Postgres, we executed a query to join the car and fuel tables created in Python. The result is sorted chronologically to make it easier to notice trends over time. The join is made across the Year column to match cars with the price of fuel the year they were released.
+Using Postgres, we executed a query to join the car and fuel tables created in Python. The result is sorted chronologically to make it easier to notice trends over time. The join is made across the Year columns to match each car with the price of fuel the year they were released.
