@@ -1,4 +1,16 @@
 # Project2Team7
+
+Synopsis - Comparing fuel effiency of cars to over time with gas prices to determine trends
+
+
+Extract - Talk about our data sources, where they came from
+
+Transform - Talk about cleaning and formatting data in order to have the two data sources be related
+
+Load - The join that we end up with showcasing data from multiple sources
+
+
+
 Go Team!
 
 The final README reflects the following:
