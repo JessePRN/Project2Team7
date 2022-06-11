@@ -12,7 +12,7 @@ https://www.kaggle.com/datasets/wandernat/us-hybrid-and-electric-sales-19992015
 
 we can walk through our jupyter code and make mention of decisions to transform rows and columns to accomodate our study
 
-**Load - The join that we end up with showcasing data from multiple sources
+**Load - The join that we end up with showcasing data from multiple sources**
 
 display final table making a clean, direct comparison of our two data sources
 
